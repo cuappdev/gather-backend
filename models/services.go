@@ -22,7 +22,7 @@ type Service struct {
 	ServiceListingID uint      `json:"service_listing_id" gorm:"index;not null"`
 	Title           string    `json:"title" gorm:"not null"`
 	Price           float64   `json:"price" gorm:"not null"`
-	PriceUnit       string    `json:"price_unit" gorm:"not null"` // e.g., "per hour", "per cut", etc.
+	PriceUnit       string    `json:"price_unit" gorm:"not null"` // e.g., "per hour", "per cut"
 	CreatedAt       time.Time `json:"created_at"`
 	UpdatedAt       time.Time `json:"updated_at"`
 	ServiceListing  ServiceListing `json:"-" gorm:"foreignKey:ServiceListingID"`
