@@ -32,3 +32,6 @@ service-account-key.json
 # Editor/IDE
 # .idea/
 # .vscode/
+
+.DS_Store
+
